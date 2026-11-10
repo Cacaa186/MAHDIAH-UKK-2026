@@ -3,7 +3,7 @@
 PHP native + MySQL (PDO), berjalan di XAMPP (localhost, tanpa internet).
 
 ## Cara menjalankan (XAMPP)
-1. Install XAMPP, buka **XAMPP Control Panel**, klik **Start** pada **Apache** dan **MySQL**.
+1. buka **XAMPP Control Panel**, klik **Start** pada **Apache** dan **MySQL**.
 2. Salin folder `perpustakaan` ke `C:\xampp\htdocs\` sehingga jadi `C:\xampp\htdocs\perpustakaan`.
 3. Buka `http://localhost/phpmyadmin` -> tab **Import** -> pilih `database/perpustakaan.sql` -> **Import**.
 4. Buka `http://localhost/perpustakaan/`.
@@ -39,7 +39,7 @@ buku (id PK, kode_buku UNIQUE, judul, pengarang, penerbit, tahun, kategori, stok
 |---|---|
 | `require_role($role)` | Membatasi halaman hanya untuk admin / siswa, selain itu kembali ke login |
 | `buat_pinjam($pdo,$user,$buku,$tgl)` | Validasi stok, batas 3 buku, buku ganda; simpan transaksi dan kurangi stok (pakai transaction) |
-| `buat_kembali($pdo,$id,$user)` | Set status dikembalikan, hitung denda, tambah stok; siswa hanya bisa miliknya sendiri |
+| `buat_kembali($pdo,$id,$user)` | Set status dikembalikan, hitung denda, tambah stok; siswa hanya bisa sendiri |
 | `hitung_denda($tempo,$kembali)` | Hari terlambat x Rp1.000 |
 | `flash()`, `e()`, `rupiah()`, `tgl()` | Pesan notifikasi, escape HTML, format rupiah, format tanggal |
 

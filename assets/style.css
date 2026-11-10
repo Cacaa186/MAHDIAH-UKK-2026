@@ -1,0 +1,22 @@
+body{font-family:Arial,sans-serif;margin:20px}
+.layout{display:block}
+.side{border-bottom:1px solid #999;padding-bottom:10px;margin-bottom:15px}
+.side nav a{margin-right:12px}
+.brand small{display:none}
+.who{margin-top:8px}
+.who b,.who span{margin-right:6px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #999;padding:6px;text-align:left}
+.tablewrap{overflow-x:auto}
+form.inline{display:inline}
+label{display:block;margin-top:8px}
+input,select{padding:4px}
+.row>div{margin-bottom:6px}
+.grid{margin:10px 0}
+.stat,.tile,.card{border:1px solid #999;padding:10px;margin-bottom:10px;display:block;text-decoration:none;color:inherit}
+.alert{padding:8px;margin-bottom:10px;border:1px solid}
+.alert.ok{background:#dfd}
+.alert.err{background:#fdd}
+.search{margin-bottom:10px}
+.auth{max-width:380px;margin:30px auto}
+.auth .card{padding:15px}
